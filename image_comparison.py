@@ -30,7 +30,7 @@ actual_image_path = "actual.png"
 expected_image_path = "expected.png"
 driver.save_screenshot(actual_image_path)
 
-# # Close the browser
+# Close the browser
 driver.quit()
 
 # Load the expected image and the actual screenshot
@@ -40,7 +40,7 @@ actual_image = ImageComparisonUtil.read_image(actual_image_path)
 # Choose the path to save the comparison result
 result_destination = "result_screenshot.png"
 
-# # Compare the images and save the result
+# Compare the images and save the result
 similarity_index = ImageComparisonUtil.compare_images(expected_image, actual_image, result_destination)
 print("Similarity Index:", similarity_index)
 
